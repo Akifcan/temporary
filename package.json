@@ -1,0 +1,26 @@
+{
+  "name": "temporary.js",
+  "version": "1.0.2",
+  "description": "notification library for javascript",
+  "main": "assets/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akifcan/notice.js.git"
+  },
+  "keywords": [
+    "alert",
+    "bootstrap",
+    "bulma",
+    "notification",
+    "alert"
+  ],
+  "author": "Akifcan Kara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akifcan/notice.js/issues"
+  },
+  "homepage": "https://github.com/Akifcan/notice.js#readme"
+}

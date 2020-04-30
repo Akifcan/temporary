@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Lato&family=Montserrat:wght@300&family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.notify{
+    position: absolute;
+    width: 30%;
+    height: 15vh;
+}
+
+.notify.bottom-right{
+    bottom: 0;
+    right: 0;
+    margin: 1.5em;
+}
+
+.notify.bottom-left{
+    bottom: 0;
+    left: 0;
+    margin: 1.5em;
+}
+
+.notify.top-left{
+    top: 0;
+    left: 0;
+    margin: 1.5em;
+}
+
+.notify.top-right{
+    top: 0;
+    right: 0;
+    margin: 1.5em;
+}
+
+.notify.center-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify.center-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notify.center-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.notification{
+    border-radius: .8em;
+    color: white;
+}
+
+.notification.primary{
+    border-right: 2px solid #303F9F;
+    border-bottom: 2px solid #303F9F;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.notification.success{
+    border-right: 2px solid #1B5E20;
+    border-bottom: 2px solid #1B5E20;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.notification.warning{
+    border-right: 2px solid #F57F17;
+    border-bottom: 2px solid #F57F17;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.notification.danger{
+    border-right: 2px solid #B71C1C;
+    border-bottom: 2px solid #B71C1C;
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.notify.bootstrap-notify{
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.bootstrap-notify.primary{
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.bootstrap-notify.secondary{
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+.bootstrap-notify.danger{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.bootstrap-notify.warning{
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.bootstrap-notify.success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.notify.bulma-notify{
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0 0 0 4px;
+    color: #4a4a4a;
+    padding: 1.25em 1.5em;
+}
+
+.bulma-notify.primary{
+    border-color: #3273dc;
+    color: #2160c4;
+    background-color: #EEF3FC;
+}
+
+.bulma-notify.danger{
+    border-color: #f14668;
+    color: #cc0f35;
+    background-color: #FEECF0;
+}
+
+.bulma-notify.success{
+    border-color: #48c774;
+    color: #257942;
+    background-color: #EFFAF3;
+}
+
+.bulma-notify.warning{
+    background-color: #FFFBEB;
+    border-color: #ffdd57;
+    color: #947600;
+}
+
+.notify.roboto-family{
+    font-family: 'Roboto';
+}
+
+.notify.lato-family{
+    font-family: 'Roboto', sans-serif;
+}
+
+.notify.montserrat-family{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notify.baloo-tamma-2-family{
+    font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+.notify.ubuntu-family{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+@keyframes notification-bottom-to-top{
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes notification-left-to-right{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width: 800px){
+    .notify{
+        width: 40%;
+    }   
+}
